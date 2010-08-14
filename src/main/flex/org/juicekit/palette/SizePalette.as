@@ -43,7 +43,7 @@ package org.juicekit.palette
   {
     private var _minSize:Number = 1;
     private var _range:Number = 6;
-    private var _is2D:Boolean = true;
+    private var _is2D:Boolean = false;
     
     /** The minimum scale factor in this size palette. */
     public function get min():Number {

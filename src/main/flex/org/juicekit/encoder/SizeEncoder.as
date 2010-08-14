@@ -109,13 +109,14 @@ package org.juicekit.encoder
       } else {
         this.palette = new SizePalette();
       }
+	  paletteIs2D = false;
+	  
     }
     
     /** @inheritDoc */
     [Bindable(event="updateEncoder")]
     override public function encode(val:Object):*
     {
-		trace(scale.interpolate(val));
       return _palette.getSize(scale.interpolate(val));
     }
     
