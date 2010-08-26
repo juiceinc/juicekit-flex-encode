@@ -147,6 +147,7 @@ package org.juicekit.collections {
 		public function clearAllStats(e:CollectionEvent = null):void
 		{
 			_stats = {};
+			dispatchEvent(new Event('statsChanged'));
 		}
 		
 		
