@@ -83,9 +83,9 @@ package org.juicekit.palette
      * @param minSize the minimum scale factor in the palette
      * @param maxSize the maximum scale factor in the palette
      * @param is2D flag indicating if the size values are for a 2D shape,
-     *  true by default
+     *  false by default
      */
-    public function SizePalette(minSize:Number = 1, maxSize:Number = 6, is2D:Boolean = true)
+    public function SizePalette(minSize:Number = 1, maxSize:Number = 6, is2D:Boolean = false)
     {
       _minSize = minSize;
       _range = maxSize - minSize;
